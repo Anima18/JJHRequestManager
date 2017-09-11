@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'JJHRequest_Example' do
+  pod 'JJHRequest', :path => '../'
+
+  target 'JJHRequest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
