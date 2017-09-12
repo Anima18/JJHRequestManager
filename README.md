@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 pod 'JJHRequest'
 ```
 
-## Author
+## AJJHhor
 
 Anima18, 591151451@qq.com
 

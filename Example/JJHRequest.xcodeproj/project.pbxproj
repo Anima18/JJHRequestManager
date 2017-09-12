@@ -23,6 +23,10 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		97A1D3D01F678F5C0001A671 /* DataBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A1D3CD1F678F5C0001A671 /* DataBean.m */; };
+		97A1D3D11F678F5C0001A671 /* DataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A1D3CF1F678F5C0001A671 /* DataObject.m */; };
+		97A1D3D61F6790380001A671 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A1D3D31F6790380001A671 /* Course.m */; };
+		97A1D3D71F6790380001A671 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A1D3D51F6790380001A671 /* User.m */; };
 		B5059FF712C00DA384CCD491 /* Pods_JJHRequest_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F15F716A40DCCA4D0610D427 /* Pods_JJHRequest_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A2C12D8AB79A1243E93B9B0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1A2C12D8AB79A1243E93B9B0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		1CBB737331BA39CE59EC7F83 /* Pods_JJHRequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJHRequest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F50181A2D77B6C354AC44B1 /* Pods-JJHRequest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJHRequest_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJHRequest_Tests/Pods-JJHRequest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3EF4A42FC21759D8DAE6BC80 /* JJHRequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = JJHRequest.podspec; path = ../JJHRequest.podspec; sourceTree = "<group>"; };
+		3EF4A42FC21759D8DAE6BC80 /* JJHRequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JJHRequest.podspec; path = ../JJHRequest.podspec; sourceTree = "<group>"; };
 		48BEDFFC6375E486A29DBFAD /* Pods-JJHRequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJHRequest_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJHRequest_Example/Pods-JJHRequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* JJHRequest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJHRequest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -61,9 +65,17 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		64FCCBEDC8FC2B581308D5EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		64FCCBEDC8FC2B581308D5EC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97A1D3CC1F678F5C0001A671 /* DataBean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBean.h; sourceTree = "<group>"; };
+		97A1D3CD1F678F5C0001A671 /* DataBean.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBean.m; sourceTree = "<group>"; };
+		97A1D3CE1F678F5C0001A671 /* DataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataObject.h; sourceTree = "<group>"; };
+		97A1D3CF1F678F5C0001A671 /* DataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataObject.m; sourceTree = "<group>"; };
+		97A1D3D21F6790380001A671 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
+		97A1D3D31F6790380001A671 /* Course.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Course.m; sourceTree = "<group>"; };
+		97A1D3D41F6790380001A671 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		97A1D3D51F6790380001A671 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C09B8B5F6686919F741C079B /* Pods-JJHRequest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJHRequest_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJHRequest_Tests/Pods-JJHRequest_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C2DD2EAD59A7B781CA12270F /* Pods-JJHRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJHRequest_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJHRequest_Example/Pods-JJHRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F15F716A40DCCA4D0610D427 /* Pods_JJHRequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JJHRequest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +155,7 @@
 		6003F593195388D20070C39A /* Example for JJHRequest */ = {
 			isa = PBXGroup;
 			children = (
+				97A1D3CB1F678F5C0001A671 /* entity */,
 				6003F59C195388D20070C39A /* JJHAppDelegate.h */,
 				6003F59D195388D20070C39A /* JJHAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -196,6 +209,21 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		97A1D3CB1F678F5C0001A671 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				97A1D3D21F6790380001A671 /* Course.h */,
+				97A1D3D31F6790380001A671 /* Course.m */,
+				97A1D3D41F6790380001A671 /* User.h */,
+				97A1D3D51F6790380001A671 /* User.m */,
+				97A1D3CC1F678F5C0001A671 /* DataBean.h */,
+				97A1D3CD1F678F5C0001A671 /* DataBean.m */,
+				97A1D3CE1F678F5C0001A671 /* DataObject.h */,
+				97A1D3CF1F678F5C0001A671 /* DataObject.m */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,7 +275,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = JJH;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = Anima18;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -395,7 +423,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* JJHAppDelegate.m in Sources */,
+				97A1D3D71F6790380001A671 /* User.m in Sources */,
+				97A1D3D01F678F5C0001A671 /* DataBean.m in Sources */,
+				97A1D3D11F678F5C0001A671 /* DataObject.m in Sources */,
 				6003F5A7195388D20070C39A /* JJHViewController.m in Sources */,
+				97A1D3D61F6790380001A671 /* Course.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -459,14 +492,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -490,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -499,13 +538,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

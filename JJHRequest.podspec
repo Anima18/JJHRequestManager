@@ -2,8 +2,8 @@
 # Be sure to run `pod lib lint JJHRequest.podspec' to ensure this is a
 # valid spec before submitting.
 #
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
+# Any lines starting with a # are optional, bJJH their use is encouraged
+# To learn more aboJJH a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
 Pod::Spec.new do |s|
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+#   * Finally, don't worry aboJJH the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -39,4 +39,8 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'AFNetworking', '~> 3.0'
+  s.dependency 'MBProgressHUD', '~> 1.0.0'
+  s.dependency 'YYModel', '~> 1.0.0'
+  s.dependency 'ReactiveObjC', '~> 3.0.0'
 end

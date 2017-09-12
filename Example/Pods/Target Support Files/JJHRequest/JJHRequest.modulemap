@@ -1,0 +1,6 @@
+framework module JJHRequest {
+  umbrella header "JJHRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}
