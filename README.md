@@ -1,44 +1,58 @@
 # JJHRequest
 
-[![CI Status](http://img.shields.io/travis/Anima18/JJHRequest.svg?style=flat)](https://travis-ci.org/Anima18/JJHRequest)
-[![Version](https://img.shields.io/cocoapods/v/JJHRequest.svg?style=flat)](http://cocoapods.org/pods/JJHRequest)
-[![License](https://img.shields.io/cocoapods/l/JJHRequest.svg?style=flat)](http://cocoapods.org/pods/JJHRequest)
-[![Platform](https://img.shields.io/cocoapods/p/JJHRequest.svg?style=flat)](http://cocoapods.org/pods/JJHRequest)
 
-## Example
+UTRequestManager是一个iOS的网络请求框架，通过解耦请求者和响应者简化多重网络传递。  
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+### 支持单一请求
+1. 数据请求，支持GET和POST请求
+2. 文件下载请求，并显示下载进度
+3. 文件上传请求，并显示上传经典
 
-## 功能介绍
-
-UTRequestManager是一个iOS的网络请求框架，通过解耦请求者和响应者简化多重网络传递，这里的网络请求单一的网络请求。  
-
-单一的网络请求包括：
-1. 数据请求
-2. 文件下载请求
-3. 文件上传请求
-
+### 支持多重网络请求
 多重网络请求是指多个单一请求的串行或者并行，包括：
-1. 嵌套请求
-2. 顺序请求
-3. 并发请求
+1. 嵌套请求，请求二可以在请求一的结果基础上发送
+2. 顺序请求，先发送请求一再发送请求二，返回结果保证请求顺序
+3. 并发请求，同时发送请求一和请求二，返回结果保证请求顺序
+
+### 请求管理
+在发送单一请求或者多重请求时，会自动显示loading提示框，请求结束后会自动关闭。在请求过程中，如果手动关闭loading提示框，会取消请求。
+
+
+## 安装
+在Podfile文件添加JJHRequest库
+```
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, "8.0"
+
+target 'TargetName name' do
+    pod 'UTRequest', '~> 1.0.0'
+end
+```
+
+然后，执行下面命令：  
 
 ```ruby
 pod 'JJHRequest'
 ```
 
-## 使用
-### 添加JJHRequest库
-```
-source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, "8.0"
+在OC文件中添加：  
 
-target 'project name' do
-    pod 'UTRequest', '~> 0.1.2'
-end
 ```
+#import <JJHRequest/JJHRequest.h>
+```
+
 
 ### 示例
+#### JJHNetworkRequest 配置方法
+1. request方法，创建一个JJHNetworkRequst对象
+2. url方法，设置url链接
+3. method方法，设置请求方式，比如GET或者POST
+4. dataClass方法，设置请求返回数据的类型
+5. addParam：value方法，设置请求参数
+6. data：faiure方法，数据请求的成功和失败回调
+7. download：faiure方法，下载请求的成功和失败回调
+8. upload：faiure方法，上传请求的成功和失败回调
+
 #### 数据请求
 
 ```
@@ -90,6 +104,16 @@ while((filePath=[myDirectoryEnumerator nextObject])!=nil){
     NSLog(@"%zi , %@", code, errorMessage);
 }];
 ```
+
+#### JJHNetworkRequestManager
+JJHNetworkRequestManager是JJHNetworkRequest的管理器，多重网络请求是指多个单一请求的串行或者并行.  
+1. managerWithRequest方法，初始化管理器
+2. nest方法，嵌套一个请求
+3. nestSuccess：failure方法，嵌套请求的成功和失败回调方法
+4. sequence方法，顺序一个请求
+5. sequenceSuccess：failure方法，顺序请求的成功和失败回调方法
+6. merge方法，并发一个请求
+7. mergeSuccess：failure方法，并发请求的成功和失败回调方法
 
 #### 嵌套请求
 
