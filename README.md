@@ -25,7 +25,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, "8.0"
 
 target 'TargetName name' do
-    pod 'JJHRequest', '~> 1.0.0'
+    pod 'JJHRequest', :git=>'https://github.com/Anima18/JJHRequestManager.git'
 end
 ```
 
